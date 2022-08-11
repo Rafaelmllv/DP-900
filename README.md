@@ -101,7 +101,7 @@ Objetivos de aprendizagem
 ### 2. Descrever uma arquitetura de data warehousing
 A arquitetura de um Data Warehouse em larga escala pode variar, bem como as tecnologias utilizadas, mas em geral inclui os seguintes elementos:
 
-[*colocar figura*] 
+![Fonte: Microsoft](https://docs.microsoft.com/pt-br/learn/wwl-data-ai/examine-components-of-modern-data-warehouse/media/modern-data-warehousing.png) 
 
 **1. Ingestão e processamento de Dados**
 
@@ -124,6 +124,23 @@ Podem ser:
 * Arquiteturas Híbridas - **Data lakehouses** ou *banco de dados lake*;
 
 **3. Modelo de dados Analíticos**
+
+![Cubo de dados. Disponível em https://busitelce.com/bidw-fundamentals-what-is-olap/](https://busitelce.com/wp-content/uploads/2020/09/olap-system.png)
+
+* Os dados *podem* ser trabalhados diretamente nos datalakes ou data warehouses, mas o mais comum é que sejam criados **modelos de dados**;
+* Facilitam a produção de relatórios, dashboards e visualizações interativas;
+* Geralmente, esses modelos são descritos como **cubos**, nos quais valores de dados numéricos são agregados em uma ou mais **dimensões** (por exemplo, para determinar o total de vendas por produto e região);
+* **Cubos de dados** não são propriamente cubos no sentido matemático, mas faz analogia a um cubo mágico, em que as faces podem ser "giradas" para gerar visualizações em diversas dimensões;
+	> * **Dimensão** - Um conjunto de uma ou mais hierarquias de nível organizadas num cubo que os utilizadores compreendem e utilizam como a base da análise de dados. Por exemplo, uma dimensão geográfica poderá incluir níveis para País/Região, Distrito/Província e Cidade.
+	> * **Hierarquia** - Uma estrutura em árvore lógica que organiza os membros de uma dimensão, de forma a que cada membro tenha um membro ascendente e zero ou mais membros descendentes.
+	> * **Nível** -  Numa hierarquia, os dados podem ser organizados em níveis de detalhe (granularidade) superiores e inferiores, como, por exemplo, níveis de Ano, Trimestre, Mês e Dia numa hierarquia de Tempo.
+	>* [Disponível em:]  http://www.linhadecodigo.com.br/artigo/1454/cubo-x-relatorio.aspx
+	
+* O modelo encapsula as relações entre valores de dados e entidades dimensionais para dar suporte à análise de "drill up/drill down"
+	> * **Drill-up** ou **roll-up** é o aumento do nível de detalhamento da informação (*menor* granularidade)
+	> * **Drill-down** é o diminuição do nível de detalhamento da informação (*maior* granularidade)
+	> * [Disponível em: ] https://www.devmedia.com.br/um-estudo-sobre-as-ferramentas-olap/6691
+
 
 **4. Visualização de dados**
 
