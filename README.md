@@ -144,6 +144,10 @@ Podem ser:
 
 **4. Visualização de dados**
 
+* Os **analistas de dados** consomem dados de modelos analíticos e diretamente de repositórios analíticos para criar **relatórios, dashboards e outras visualizações**;
+* Usuários que não são profissionais de tecnologia podem executar relatórios e análise de dados por **autoatendimento**. (*Self-service BI*)
+* As visualizações dos dados mostram *tendências*, *comparações* e **KPIs** (**K**ey **P**erformance **I**ndicator - Indicadores-chave de desempenho) para uma empresa ou outra organização;
+	* Podem assumir a forma de relatórios impressos, grafos e gráficos em documentos ou apresentações de PowerPoint, dashboards baseados na Web e ambientes interativos nos quais os usuários podem explorar os dados visualmente.
 
 ---
 
